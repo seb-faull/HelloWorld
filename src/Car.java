@@ -2,9 +2,21 @@ import java.awt.*;
 
 public class Car {
 
-    int averageMilesPerGallon;
+    double averageMilesPerGallon;
     String licensePlate;
-    Color paintColor;   // from jwt library
+    Color paintColour;   // from jwt library
     boolean areTailLightsWorking;
+
+    public Car(double inputAverageMPG,
+               String inputLicensePlate,
+               Color inputPaintColour,
+               boolean inputAreTailLightsWorking) {
+
+        this.averageMilesPerGallon  = inputAverageMPG;
+        this.licensePlate           = inputLicensePlate;
+        this.paintColour            = inputPaintColour;
+        this.areTailLightsWorking   = inputAreTailLightsWorking;
+
+    }
 
 }
